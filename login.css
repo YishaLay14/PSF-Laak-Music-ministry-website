@@ -1,0 +1,85 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    color:#333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color:whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) ;
+    width: 400px;
+    text-align: center;
+
+}
+
+.h1{
+    color:gold;
+    font-size: 4rem;
+    font-weight: 0;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+}
+
+.h2{
+    color:white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin: 9px 0;
+    border: none;
+    border-radius: 5px ;
+
+}
+
+button {
+    width: 30%;
+    padding:10px;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease .3s;
+    font-size: 13px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    z-index: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+button:hover{
+    background-color: gold;
+    transform: scale(1.1);
+    box-shadow: 0 1rem 2rem  rgba(255, 219, 60, 0.7);
+}
+
+label {
+    color: black;
+    font-weight: 700;
+}
+
+input[type="input"] {
+    display: none;
+}
+
+#login:checked ~ .form-container #login-form,
+#signup:checked ~ .form-container #signup-form {
+    display: block;
+}
+
